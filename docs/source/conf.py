@@ -11,9 +11,14 @@ import os
 import shlex
 import recommonmark.parser
 
-from jupyter_sphinx_theme import *
-init_theme()
-
+# from jupyter_sphinx_theme import *
+# init_theme()
+html_theme = 'alabaster'
+html_sidebars = {
+    '**': [
+        'sidebartoc.html'
+    ]
+}
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -167,6 +172,6 @@ graphviz_output_format = 'svg'
 # if calling sphinx-build directly - if using the make.bat file first do:
 # set SPHINXOPTS=-D graphviz_dot="C:\Program Files (x86)\Graphviz2.38\bin\dot.exe"
 # or similar, if all else fails, something like:
-# graphviz_dot=r'c:\Program Files (x86)\Graphviz2.38\bin\dot.exe' 
+# graphviz_dot=r'c:\Program Files (x86)\Graphviz2.38\bin\dot.exe'
 # with your path to graphviz in should work if added to this file.
 # BUT Please do not commit with the path on your computer in place.
