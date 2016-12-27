@@ -1,4 +1,4 @@
-# Jupyter
+# Jupyter Documentation
 
 Jupyter metapackage for installation and docs.
 
