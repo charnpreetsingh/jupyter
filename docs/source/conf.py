@@ -11,14 +11,6 @@ import os
 import shlex
 import recommonmark.parser
 
-# from jupyter_sphinx_theme import *
-# init_theme()
-html_theme = 'alabaster'
-html_sidebars = {
-    '**': [
-        'sidebartoc.html'
-    ]
-}
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -88,6 +80,13 @@ pygments_style = 'sphinx'
 todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
+
+html_theme = 'jupytertheme'
+
+html_theme_options = {
+}
+
+html_theme_path = ["."]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
